@@ -35,8 +35,8 @@ class Settings:
     CORS_ORIGINS: List[str] = os.getenv(
         "CORS_ORIGINS",
         "http://localhost:3000,http://127.0.0.1:3000,"
-        "https://frontend-two-drab-pex7mhnsv2.vercel.app,"
-        "https://frontend-njuyq9h4i-swayamshetkars-projects.vercel.app",
+        "https://frontend-m6mogfnwm-swayamshetkars-projects.vercel.app,"
+        "https://frontend-five-chi-82.vercel.app",
     ).split(",")
     CORS_ORIGINS = [origin.strip() for origin in CORS_ORIGINS if origin.strip()]
     MAX_REQUEST_SIZE: int = int(os.getenv("MAX_REQUEST_SIZE", "10000"))  # characters

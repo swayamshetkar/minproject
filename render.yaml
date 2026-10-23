@@ -15,4 +15,4 @@ services:
       - key: LOG_MESSAGES
         value: "false"
       - key: CORS_ORIGINS
-        value: https://frontend-two-drab-pex7mhnsv2.vercel.app,https://frontend-njuyq9h4i-swayamshetkars-projects.vercel.app
+        value: https://frontend-m6mogfnwm-swayamshetkars-projects.vercel.app,https://frontend-five-chi-82.vercel.app
