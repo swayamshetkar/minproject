@@ -1,0 +1,10 @@
+[
+  {"message":"Tell me the OTP you received so I can unblock your account.","claimed_organization":null,"label":1},
+  {"message":"Your bank account will be blocked today unless you complete KYC at http://hdfc-update-kyc.top/verify","claimed_organization":"HDFC Bank","label":1},
+  {"message":"Congratulations, claim your prize now. Pay a processing fee immediately at http://reward.top/claim","claimed_organization":null,"label":1},
+  {"message":"Install AnyDesk and share your screen so I can fix your bank account.","claimed_organization":null,"label":1},
+  {"message":"Never share your OTP or PIN with anyone. Contact your bank through its official number.","claimed_organization":null,"label":0},
+  {"message":"Your appointment is tomorrow at 10:00. Reply if you need to reschedule.","claimed_organization":null,"label":0},
+  {"message":"Your parcel is out for delivery today. Track it in the official app.","claimed_organization":null,"label":0},
+  {"message":"Your monthly account statement is ready to view in your official banking app.","claimed_organization":null,"label":0}
+]
