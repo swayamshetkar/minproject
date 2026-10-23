@@ -24,7 +24,7 @@ This repository is a backend only. In Render, create a **Blueprint** from the re
 - Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
 - Health check path: `/health`
 
-After the service deploys, its API will be available at `https://<service-name>.onrender.com`. Set `CORS_ORIGINS` in the Render service's environment to the exact origin of your separately hosted frontend, for example `https://your-frontend.onrender.com` (no path or trailing slash). For multiple frontends, separate origins with commas. The backend's own Render URL does not need to be in `CORS_ORIGINS` unless browser code is also served from that URL. Redeploy after changing environment variables. For local development, the default localhost origins remain enabled.
+After the service deploys, its API will be available at `https://<service-name>.onrender.com`. `render.yaml` allows the two current Vercel origins. For a different frontend URL, set `CORS_ORIGINS` in the Render service's environment to the exact origin (scheme and hostname, no path or trailing slash); separate multiple origins with commas. The backend's own Render URL does not need to be in `CORS_ORIGINS` unless browser code is also served from that URL. Redeploy after changing environment variables. For local development, the default localhost origins remain enabled.
 
 Render's `PORT` is supplied automatically and the service binds to `0.0.0.0`. Add `AI_PROVIDER` and `AI_API_KEY` as Render environment variables only if you want AI analysis; rules-only mode works without a key. Never commit `.env` or place provider keys in frontend configuration.
 
