@@ -18,7 +18,7 @@ API base: `http://127.0.0.1:8000`; interactive API docs: `/docs`; health: `/heal
 
 ## Deploy on Render
 
-This repository is a backend only. In Render, create a **Blueprint** from the repository and use `render.yaml`, or create a Python web service with:
+This repository is a backend only. In Render, create a **Blueprint** from the repository and use `render.yaml`. The log you shared shows the service is currently using `uvicorn main:app --reload`; update that service's **Settings → Build & Deploy → Start Command** to the production command below, or deploy the repository as a Blueprint so Render reads `render.yaml`:
 
 - Build command: `pip install -r requirements.txt`
 - Start command: `uvicorn main:app --host 0.0.0.0 --port $PORT`

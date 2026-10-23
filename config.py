@@ -33,7 +33,7 @@ class Settings:
     # defaults for local development; Render's own hostname is not a browser origin
     # unless the frontend is served from this same service.
     CORS_ORIGINS: List[str] = os.getenv(
-        "CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000"
+        "CORS_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000,http://frontend-two-drab-pex7mhnsv2.vercel.app"
     ).split(",")
     CORS_ORIGINS = [origin.strip() for origin in CORS_ORIGINS if origin.strip()]
     MAX_REQUEST_SIZE: int = int(os.getenv("MAX_REQUEST_SIZE", "10000"))  # characters

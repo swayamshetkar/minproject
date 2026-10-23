@@ -8,7 +8,7 @@ Endpoints:
 - GET /health — Application health check
 - GET /api/v1/health — API health check
 
-Run: uvicorn main:app --host 127.0.0.1 --port 8000
+Run locally: uvicorn main:app --host 0.0.0.0 --port 8000
 """
 
 import logging
@@ -170,6 +170,12 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 
 # --- Endpoints ---
+@app.get("/")
+async def root():
+    """Simple landing response for platform probes and API discovery."""
+    return {"name": "Senior Citizen Digital Safety Companion API", "health": "/health", "docs": "/docs"}
+
+
 class HealthResponse(BaseModel):
     status: str
     ai_configured: bool
